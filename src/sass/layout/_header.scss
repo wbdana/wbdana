@@ -6,6 +6,7 @@
     to right bottom,
     rgba($color-charcoal, 1),
     rgba($color-black, 1)
+    //url(~/src/assets/code.png)
   );
   background-position: top;
   background-size: cover;
@@ -34,5 +35,16 @@
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+.header-projects {
+  color: $color-charcoal;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: all 2s ease;
+
+  &:hover {
+    color: $color-red-dark;
   }
 }

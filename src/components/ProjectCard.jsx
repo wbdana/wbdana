@@ -1,20 +1,6 @@
 import React from 'react';
 
 const ProjectCard = props => {
-  // TODO WBD remove
-  if (props.title && props.back) {
-    return (
-        <div className="card">
-          <div className="card__side card__side--front">
-            {props.title}
-          </div>
-          <div className="card__side card__side--back">
-            {props.back}
-          </div>
-        </div>
-    );
-  }
-
   return (
       <div className="card">
         <div className="card__side card__side--front">
@@ -25,8 +11,11 @@ const ProjectCard = props => {
             {props.title}
           </div>
         </div>
-        <div className="card__side card__side--back">
-          Test back
+        <div className={"card__side card__side--back card__side--back-" + props.position}>
+          <span className="card__side--back-text">View the</span>
+          <a href={props.url} target="_blank" rel="noopener noreferrer" className="btn__demo">
+            Demo
+          </a>
         </div>
       </div>
   );

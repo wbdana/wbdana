@@ -17,12 +17,52 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &--front {
-      background-color: $color-green-light;
+      background-color: $color-white;
     }
 
     &--back {
       transform: rotateY(180deg);
-      background-color: $color-red-light;
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-light, 1),
+        rgba($color-charcoal, 1)
+      );
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-orange-light, .8),
+          rgba($color-orange-medium, .8),
+          rgba($color-orange-dark, .8)
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-blue-light, .8),
+          rgba($color-blue-medium, .8),
+          rgba($color-blue-dark, .8)
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-green-light, .8),
+          rgba($color-green-medium, .8),
+          rgba($color-green-dark, .8)
+        );
+      }
+
+      &-4 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-purple-light, .8),
+          rgba($color-purple-medium, .8),
+          rgba($color-purple-dark, .8)
+        );
+      }
     }
   }
 
