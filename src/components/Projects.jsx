@@ -3,34 +3,38 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
-    <section className="projects">
+    <div className="projects">
       <div className="row">
         <div className="col-1-of-4">
           <ProjectCard
-            title={"Front 1"}
-            back={"Back 1"}
+            img={"https://i.imgur.com/SzsSGDt.jpg"}
+            url={"https://asteroids-online.herokuapp.com"}
+            title={"Asteroids Online"}
           />
         </div>
         <div className="col-1-of-4">
           <ProjectCard
-              title={"Front 2"}
-              back={"Back 2"}
+            img={"https://i.imgur.com/7jG8L5r.png"}
+            url={"https://conntext.herokuapp.com"}
+            title={"Connected Text"}
           />
         </div>
         <div className="col-1-of-4">
           <ProjectCard
-              title={"Front 3"}
-              back={"Back 3"}
+            img={"http://i.imgur.com/MubF8Tb.png"}
+            url={"https://qsmart-react.herokuapp.com/"}
+            title={"QSmart"}
           />
         </div>
         <div className="col-1-of-4">
           <ProjectCard
-              title={"Front 4"}
-              back={"Will do Mom"}
+            img={"http://i.imgur.com/UUo9URs.png"}
+            url={"https://pixel-playground.herokuapp.com/"}
+            title={"Pixel Playground"}
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
