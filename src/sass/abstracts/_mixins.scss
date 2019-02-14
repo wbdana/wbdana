@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ""; // need content or else pseudoelement will not appear
+    display: table;
+    clear: both; // both float: left; and float: right;
+  }
+}
