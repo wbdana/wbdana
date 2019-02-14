@@ -1,0 +1,22 @@
+.header {
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 75vh);
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 75vh);
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-charcoal, 0.8),
+    rgba($color-black, 0.8)
+  );
+  background-position: top;
+  background-size: cover;
+  // border-radius: 3rem;
+  position: relative;
+
+  &__text {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
