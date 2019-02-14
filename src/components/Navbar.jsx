@@ -7,33 +7,33 @@ const Navbar = () => {
 
         <div className="col-1-of-4">
           <div className="navbar__item navbar__item-1">
-            <span className="navbar__item navbar__item-text">
+            <a href="https://github.com/wbdana" target="_blank" rel="noopener noreferrer" className="navbar__item navbar__item-text">
               GitHub
-            </span>
+            </a>
           </div>
         </div>
 
         <div className="col-1-of-4">
           <div className="navbar__item navbar__item-2">
-            <span className="navbar__item navbar__item-text">
+            <a href="https://linkedin.com/in/wbdana" target="_blank" rel="noopener noreferrer" className="navbar__item navbar__item-text">
               LinkedIn
-            </span>
+            </a>
           </div>
         </div>
 
         <div className="col-1-of-4">
           <div className="navbar__item navbar__item-3">
-            <span className="navbar__item navbar__item-text">
+            <a href="https://medium.com/@wbdana" target="_blank" rel="noopener noreferrer" className="navbar__item navbar__item-text">
               Blog
-            </span>
+            </a>
           </div>
         </div>
 
         <div className="col-1-of-4">
           <div className="navbar__item navbar__item-4">
-            <span className="navbar__item navbar__item-text">
+            <a href="https://twitter.com/_wbdana" target="_blank" rel="noopener noreferrer" className="navbar__item navbar__item-text">
               Twitter
-            </span>
+            </a>
           </div>
         </div>
     </div>
