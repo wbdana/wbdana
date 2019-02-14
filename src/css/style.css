@@ -14,7 +14,26 @@ body {
 body {
   color: #fff;
   font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.7;
   padding: 3rem; }
+
+.navbar {
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.8), rgba(54, 69, 79, 0.8), rgba(0, 0, 0, 0.8));
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 0 15vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 15vh);
+  height: 15vh; }
+
+.footer {
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.8), rgba(54, 69, 79, 0.8), rgba(0, 0, 0, 0.8));
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 75vh, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 75vh, 100% 100%, 0 100%);
+  height: 15vh;
+  color: orangered; }
 
 .header {
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 75vh);
@@ -23,6 +42,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(54, 69, 79, 0.8), rgba(0, 0, 0, 0.8));
   background-position: top;
   background-size: cover;
+  margin-top: -8rem;
   position: relative; }
   .header__text {
     position: absolute;
