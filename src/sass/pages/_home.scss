@@ -1,11 +1,14 @@
-.projects {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($color-white, .8),
-    rgba($color-red-light, .8)
-  );
+.section-projects {
+  //background-image: linear-gradient(
+  //  to right bottom,
+  //  rgba($color-white, .8),
+  //  rgba($color-red-light, .8)
+  //);
+  background-color: $color-grey-light;
+  overflow: hidden;
   padding: 25rem 0 15rem 0;
-  margin-top: 100vh;
+  margin-top: -24rem;
   height: 100%;
-  position: relative;
+  //position: relative;
+  z-index: -1;
 }

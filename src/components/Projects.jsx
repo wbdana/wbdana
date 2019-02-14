@@ -3,8 +3,8 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
-    <div className="projects">
-      <div className="row">
+    <section className="section-projects">
+      <div className="row u-grid-max-width">
         <div className="col-1-of-4">
           <ProjectCard
             img={"https://i.imgur.com/SzsSGDt.jpg"}
@@ -34,7 +34,7 @@ const Projects = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

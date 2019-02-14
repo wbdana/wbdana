@@ -1,8 +1,10 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "base/animations";
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
 @import "components/card";
 @import "components/footer";
@@ -11,3 +13,5 @@
 @import "layout/header";
 @import "layout/home";
 @import "layout/navbar";
+
+@import "pages/home";
