@@ -3,7 +3,12 @@ import React from 'react';
 const Footer = () => {
   return (
       <div className="footer">
-        Footer
+        <div className="footer__text">
+          Footer in mouth!Footer in mouth!Footer in mouth!Footer in mouth!
+          Footer in mouth!Footer in mouth!Footer in mouth!Footer in mouth!
+          Footer in mouth!Footer in mouth!Footer in mouth!Footer in mouth!
+          Footer in mouth!Footer in mouth!Footer in mouth!Footer in mouth!
+        </div>
       </div>
   );
 };
