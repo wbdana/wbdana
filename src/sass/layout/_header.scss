@@ -1,15 +1,15 @@
 .header {
-  clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 75vh);
-  -webkit-clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 75vh);
+  clip-path: polygon(0 40vh, 100% 0, 100% 100%, 0 60vh);
+  -webkit-clip-path: polygon(0 40vh, 100% 0, 100% 100%, 0 60vh);
   height: 95vh;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-charcoal, 0.8),
     rgba($color-black, 0.8)
   );
-  background-position: top;
-  background-size: cover;
-  margin-top: -14.4rem; // TODO WBD uncomment this
+  //background-position: top;
+  //background-size: cover;
+  margin-top: -38rem; // TODO WBD uncomment this
   position: relative;
 
   &__text {

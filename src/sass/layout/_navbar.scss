@@ -9,9 +9,10 @@
   background-size: cover;
   //clip-path: polygon(0 0, 100% 0, 0 15vh);
   //-webkit-clip-path: polygon(0 0, 100% 0, 0 15vh);
-   clip-path: polygon(0 0, 100% 0, 0 25vh);
-  -webkit-clip-path: polygon(0 0, 100% 0, 0 25vh);
-  height: 25vh;
+   clip-path: polygon(0 0, 100% 0, 0 40vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 40vh);
+
+  height: 40vh;
 
   &__item {
     border-bottom: 1px solid $color-black;
