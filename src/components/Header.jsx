@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 
 const Header = () => {
   return (
@@ -6,6 +7,7 @@ const Header = () => {
       <div className="header__text">
         William Dana
       </div>
+      <Navbar />
     </header>
   );
 };
