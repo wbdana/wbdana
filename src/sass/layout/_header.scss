@@ -19,11 +19,20 @@
 
   position: relative;
 
-  &__text {
+  &__header-row {
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 30%;
+    width: 100%;
+  }
+
+  &__animated {
+    animation: moveInRight 5s ease-out;
+  }
+
+  &__text {
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
     text-align: center;
   }
 }

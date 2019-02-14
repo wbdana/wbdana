@@ -18,6 +18,32 @@ body {
   line-height: 1.7;
   padding: 3rem; }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 52rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #37ff3f; }
+    .card__side--back {
+      transform: rotateY(180deg);
+      background-color: #ff182c; }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 .footer {
   background-image: linear-gradient(to right bottom, rgba(255, 24, 44, 0.8), rgba(168, 16, 29, 0.8), rgba(83, 8, 15, 0.8));
   background-position: top;
@@ -67,11 +93,16 @@ body {
   -moz-border-radius-topright: 3rem;
   -webkit-border-top-right-radius: 3rem;
   position: relative; }
-  .header__text {
+  .header__header-row {
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 30%;
+    width: 100%; }
+  .header__animated {
+    animation: moveInRight 5s ease-out; }
+  .header__text {
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
     text-align: center; }
 
 .navbar {
