@@ -1,35 +1,33 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
     <section className="projects">
       <div className="row">
-        {/* Start col */}
         <div className="col-1-of-4">
-          <div className="card">
-
-            {/* Front of card */}
-            <div className="card__side card__side--front">
-              Front
-            </div>
-
-
-            {/* Back of card */}
-            <div className="card__side card__side--back">
-              Back
-            </div>
-
-          </div>
-          {/* End col */}
+          <ProjectCard
+            title={"Front 1"}
+            back={"Back 1"}
+          />
         </div>
         <div className="col-1-of-4">
-          Card 2
+          <ProjectCard
+              title={"Front 2"}
+              back={"Back 2"}
+          />
         </div>
         <div className="col-1-of-4">
-          Card 3
+          <ProjectCard
+              title={"Front 3"}
+              back={"Back 3"}
+          />
         </div>
         <div className="col-1-of-4">
-          Card 4
+          <ProjectCard
+              title={"Front 4"}
+              back={"Will do Mom"}
+          />
         </div>
       </div>
     </section>
