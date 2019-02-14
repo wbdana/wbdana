@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="col-1-of-4">
           <div className="navbar__item navbar__item-1">
             <span className="navbar__item navbar__item-text">
-              Github
+              GitHub
             </span>
           </div>
         </div>
