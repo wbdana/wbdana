@@ -7,7 +7,7 @@ const Header = () => {
       <div className="header__text">
         William Dana
       </div>
-      <Navbar />
+      {/*<Navbar />*/}
     </header>
   );
 };
