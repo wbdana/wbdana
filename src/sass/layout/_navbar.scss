@@ -11,30 +11,39 @@
       rgba($color-blue-medium, 0.8),
       rgba($color-blue-dark, 0.8)
   );
-  background-position: top;
-  background-size: cover;
-  border-top-left-radius: 3rem;
-  -moz-border-radius-topleft: 3rem;
-  -webkit-border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
-  -moz-border-radius-topright: 3rem;
-  -webkit-border-top-right-radius: 3rem;
+  //background-position: top;
+  //background-size: cover;
+  //border-top-left-radius: 3rem;
+  //-moz-border-radius-topleft: 3rem;
+  //-webkit-border-top-left-radius: 3rem;
+  //border-top-right-radius: 3rem;
+  //-moz-border-radius-topright: 3rem;
+  //-webkit-border-top-right-radius: 3rem;
   //clip-path: polygon(0 0, 100% 0, 0 15vh);
   //-webkit-clip-path: polygon(0 0, 100% 0, 0 15vh);
-   clip-path: polygon(0 0, 100% 0, 0 40vh);
-  -webkit-clip-path: polygon(0 0, 100% 0, 0 40vh);
 
-  height: 40vh;
+  //height: 40vh;
+  position: absolute;
+  bottom: 9rem;
+  left: -2rem;
+  //margin-top: -3rem;
+  //margin-bottom: -30rem;
+  width: 105%;
+  transform: skew(30deg, -6deg);
 
   &__item {
-    border-bottom: 1px solid $color-black;
-    height: 90%;
+    //border-bottom: 1px solid $color-black;
+    //height: 90%;
+    &:not(:last-child) {
+      border-right: 1px solid $color-black;
+    }
 
     &-text {
       color: orangered;
       font-size: 3.5rem;
+      margin-left: 5rem;
       text-decoration: none;
-      transform: skew(30deg, -3deg);
+      //transform: skew(30deg, -3deg);
     }
   }
 }
