@@ -13,7 +13,7 @@ const ProjectCard = props => {
         </div>
         <div className={"card__side card__side--back card__side--back-" + props.position}>
           <span className="card__side--back-text">View the</span>
-          <a href={props.url} target="_blank" rel="noopener noreferrer" className="btn__demo">
+          <a href={props.url} target="_blank" rel="noopener noreferrer" className="btn btn__demo">
             Demo
           </a>
         </div>

@@ -1,7 +1,27 @@
 .btn {
+  background-color: $color-white;
+  border: 2px solid $color-white;
+  border-radius: 20rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  -webkit-box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  -moz-box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  display: inline-block;
+  font-size: 6rem;
+  padding: 1.5rem 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
   text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s ease;
+
   &__demo {
     color: $color-black;
-    text-align: center;
+  }
+
+  &:hover {
+    background-color: $color-charcoal;
+    color: $color-white;
+    transform: translate(-50%, -3px);
   }
 }

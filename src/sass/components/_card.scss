@@ -28,6 +28,13 @@
         rgba($color-charcoal, 1)
       );
 
+      &-text {
+        color: $color-grey-light;
+        display: block;
+        margin-top: 12rem;
+        text-align: center;
+      }
+
       &-1 {
         background-image: linear-gradient(
           to right bottom,
