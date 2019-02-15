@@ -1,10 +1,13 @@
 .navbar {
   background-image: linear-gradient(
     to right bottom,
-    rgba($color-grey-light, 1),
-    rgba($color-charcoal, 1),
     rgba($color-black, 1)
+    rgba($color-charcoal, 1),
+    rgba($color-grey-light, 1)
   );
+
+  //background-color: transparent;
+
   //background-image: linear-gradient(
   //    to right bottom,
   //    rgba($color-blue-light, 0.8),
@@ -63,11 +66,13 @@
     }
 
     &-text {
-      color: orangered;
+      color: $color-orangered;
       font-size: 6.5rem;
       margin-left: -5rem;
       text-decoration: none;
       position: absolute;
+      text-shadow: 2px 2px $color-black;
+      text-transform: uppercase;
       transform: skew(-15deg, -8deg);
       transition: all .2s ease;
       width: 90%;

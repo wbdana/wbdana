@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar">
 
         <div className="col-1-of-4">
-          <div className="navbar__item navbar__item-1">
+          <div className="navbar__item navbar__item-2">
             <a href="https://github.com/wbdana" target="_blank" rel="noopener noreferrer" className="navbar__item navbar__item-text">
               GitHub
             </a>
@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
 
         <div className="col-1-of-4">
-          <div className="navbar__item navbar__item-2">
+          <div className="navbar__item navbar__item-1">
             <a href="https://linkedin.com/in/wbdana" target="_blank" rel="noopener noreferrer" className="navbar__item navbar__item-text">
               LinkedIn
             </a>

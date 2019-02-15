@@ -5,9 +5,16 @@
   //  rgba($color-red-light, .8)
   //);
   background-color: $color-grey-light;
+  //background-image: linear-gradient(
+  //  to right bottom,
+  //  rgba($color-grey-light, 1),
+  //  rgba($color-charcoal, 1),
+  //  rgba($color-black, 1)
+  //);
+
   overflow: hidden;
-  padding: 25rem 0 15rem 0;
-  margin-top: -24rem;
+  padding: 20rem 0 15rem 0;
+  margin-top: -28rem;
   height: 100%;
   //position: relative;
   z-index: -1;
