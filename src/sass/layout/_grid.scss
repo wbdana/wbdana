@@ -4,6 +4,29 @@
   margin: 0 auto;
   @include clearfix;
 
+
+  @media screen and (max-width: 992px) {
+    [class^="col-"].resp {
+      float: none;
+      width: 40%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    [class^="col-"].resp {
+      float: none;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
   [class^="col-"] {
     float: left;
 
@@ -11,6 +34,7 @@
       margin-right: $gutter-horizontal;
     }
   }
+
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
