@@ -35,9 +35,10 @@ const Projects = () => {
         Projects
       </h2>
       <div className="row u-grid-max-width">
-        {projects.map(project => (
+        {projects.map((project, index) => (
           <div className="col-1-of-4 resp">
             <ProjectCard
+              key={index}
               img={project.img}
               position={project.position}
               title={project.title}

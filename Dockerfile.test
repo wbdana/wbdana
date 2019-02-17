@@ -1,0 +1,17 @@
+# Alpine linux from dockerhub with node preinstalled
+FROM node:alpine
+
+# Set working director to be same as app on local machine
+WORKDIR '/wbdana'
+
+# Copy package.json from local to WORKDIR in Docker container
+COPY package*.json ./
+
+# Install dependencies listed in package.json
+RUN npm install
+
+# Copy project files from local machine to WORKDIR in container
+COPY . .
+
+# Set default RUN command for built container to run test suite
+CMD ["npm", "run", "test", "--", "--coverage"]

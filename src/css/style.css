@@ -173,7 +173,7 @@ body {
   .header__animated {
     animation: moveInRight 5s ease-out; }
   .header__text {
-    font-size: 12rem;
+    font-size: 7rem;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }

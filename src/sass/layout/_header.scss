@@ -5,12 +5,17 @@
   background-image: linear-gradient(
     to right bottom,
 
+    //rgba($color-charcoal, 1),
+    //rgba($color-grey-light, 1)
+
     rgba($color-black, 1),
     rgba($color-blue-medium, 1),
     rgba($color-red-medium, 1),
     rgba($color-orange-light, 1),
     rgba($color-yellow-medium, 1)
+
     //url("~/src/assets/code.png")
+    //url("https://i.imgur.com/K8Q2Jwi.png")
   );
   background-position: top;
   background-size: cover;
@@ -36,7 +41,7 @@
   }
 
   &__text {
-    font-size: 12rem;
+    font-size: 7rem;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center;

@@ -15,7 +15,7 @@ const Header = () => {
           </div>
 
           <div className="col-1-of-2">
-            Column 2
+            Column Two
           </div>
         </div>
       </div>
