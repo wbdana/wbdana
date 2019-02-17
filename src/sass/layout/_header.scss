@@ -53,3 +53,9 @@
     color: $color-red-dark;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .header-projects {
+    font-size: 6rem;
+  }
+}

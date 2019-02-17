@@ -142,10 +142,6 @@ body {
       left: 50%;
       transform: translateX(-50%);
       width: 100%; } }
-  @media screen and (max-width: 600px) {
-    .row [class^="col-"].resp {
-      float: none;
-      width: 100%; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -189,6 +185,10 @@ body {
   transition: all 2s ease; }
   .header-projects:hover {
     color: #53080f; }
+
+@media screen and (max-width: 992px) {
+  .header-projects {
+    font-size: 6rem; } }
 
 .navbar {
   background-image: linear-gradient(to right bottom, black #36454f, #eeeeee);
@@ -242,3 +242,7 @@ body {
   margin-top: -28rem;
   height: 100%;
   z-index: -1; }
+
+@media screen and (max-width: 992px) {
+  .section-projects {
+    margin-top: -24rem; } }
