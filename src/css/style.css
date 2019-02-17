@@ -191,7 +191,7 @@ body {
     font-size: 6rem; } }
 
 .navbar {
-  background-image: linear-gradient(to right bottom, black #36454f, #eeeeee);
+  background-image: linear-gradient(to right bottom, black, #36454f);
   clip-path: polygon(0 25vh, 100% 0, 100% 25vh, 0 50vh);
   -webkit-clip-path: polygon(0 25vh, 100% 0, 100% 25vh, 0 50vh);
   height: 50%;
@@ -234,6 +234,44 @@ body {
       .navbar__item-text:hover {
         background-color: orange;
         outline: 1.5rem solid #050341; }
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    overflow: auto; }
+    .navbar__item {
+      height: 25%;
+      left: 50%;
+      margin-top: 10rem;
+      outline-offset: 1rem;
+      transform: translateX(-75%);
+      width: 75%; }
+      .navbar__item-text {
+        color: orangered;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-left: 5%;
+        height: 50%;
+        text-decoration: none;
+        position: absolute;
+        text-shadow: 2px 2px #000000;
+        text-transform: uppercase;
+        transform: skew(-15deg, -8deg);
+        transition: all .2s ease;
+        width: 50%; }
+        .navbar__item-text:hover {
+          background-color: orange;
+          outline: 1.5rem solid #050341; }
+      .navbar__item-1 > * {
+        margin-top: 20rem; }
+      .navbar__item-2 > * {
+        margin-top: 16rem; }
+      .navbar__item-3 > * {
+        margin-top: 12rem; }
+      .navbar__item-4 > * {
+        margin-top: 8rem; } }
 
 .section-projects {
   background-color: #eeeeee;
