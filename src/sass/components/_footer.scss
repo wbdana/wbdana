@@ -6,25 +6,10 @@
     rgba($color-black, 0.8)
   );
 
-  //background-image: linear-gradient(
-  //    to right bottom,
-  //    rgba($color-red-light, 0.8),
-  //    rgba($color-red-medium, 0.8),
-  //    rgba($color-red-dark, 0.8)
-  //);
-  //background-position: top;
-  //background-size: cover;
-
-  //clip-path: polygon(0 0, 100% 100%, 0 100%);
-  //-webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
   clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
   -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
 
   height: 30vh;
-  //margin-top: -20rem;
-  //margin-top: 30rem;
-  //padding-top: 10rem;
-
   position: absolute;
   bottom: 0;
   width: 100%;
