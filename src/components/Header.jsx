@@ -17,7 +17,7 @@ const Header = () => {
           </div>
 
           <div className="col-1-of-2 resp">
-            <div className="header__text">Test</div>
+            <div className="header__text">Test One</div>
             {/* Image composition to come here */}
           </div>
         </div>
