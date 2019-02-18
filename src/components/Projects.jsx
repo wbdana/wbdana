@@ -35,17 +35,19 @@ const Projects = () => {
         Projects
       </h2>
       <div className="row u-grid-max-width">
-        {projects.map((project, index) => (
-          <div className="col-1-of-4 resp">
-            <ProjectCard
-              key={index}
-              img={project.img}
-              position={project.position}
-              title={project.title}
-              url={project.url}
-            />
-          </div>
-        ))}
+        {
+          projects.map((project, index) => (
+            <div className="col-1-of-4 resp">
+              <ProjectCard
+                key={index}
+                img={project.img}
+                position={project.position}
+                title={project.title}
+                url={project.url}
+              />
+            </div>
+          ))
+        }
         {/*<div className="col-1-of-4">*/}
           {/*<ProjectCard*/}
             {/*img={"https://i.imgur.com/SzsSGDt.jpg"}*/}

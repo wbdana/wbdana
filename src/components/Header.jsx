@@ -7,7 +7,8 @@ const Header = () => {
 
       <div className="header__header-row">
         <div className="row">
-          <div className="col-1-of-2">
+
+          <div className="col-1-of-2 resp">
             <div className="header__animated">
               <div className="header__text">
                 William Dana
@@ -15,7 +16,8 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="col-1-of-2">
+          <div className="col-1-of-2 resp">
+            <div className="header__text">Test</div>
             {/* Image composition to come here */}
           </div>
         </div>
