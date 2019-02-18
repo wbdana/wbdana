@@ -1,18 +1,21 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
-
+//
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
-
+//
 @import "components/button";
 @import "components/card";
-@import "components/footer";
-
-@import "layout/grid";
+@import "components/projects";
+//@import "components/footer";
+//
+//@import "layout/grid";
 @import "layout/header";
 @import "layout/home";
 @import "layout/navbar";
+//
+//@import "pages/home";
 
-@import "pages/home";
+@import "node_modules/tachyons-sass/tachyons.scss";
