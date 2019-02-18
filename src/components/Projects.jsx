@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
@@ -81,6 +82,7 @@ const Projects = () => {
           {/*/>*/}
         {/*</div>*/}
       </div>
+      <Footer />
     </section>
   );
 };

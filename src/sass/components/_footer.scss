@@ -1,33 +1,75 @@
 .footer {
-  //background-image: linear-gradient(
-  //  to right bottom,
-  //  rgba($color-grey-light, 0.8),
-  //  rgba($color-charcoal, 0.8),
-  //  rgba($color-black, 0.8)
-  //);
-
   background-image: linear-gradient(
-      to right bottom,
-      rgba($color-red-light, 0.8),
-      rgba($color-red-medium, 0.8),
-      rgba($color-red-dark, 0.8)
+    to right bottom,
+    rgba($color-grey-light, 0.8),
+    rgba($color-charcoal, 0.8),
+    rgba($color-black, 0.8)
   );
-  background-position: top;
-  background-size: cover;
-  border-bottom-left-radius: 3rem;
-  -moz-border-radius-bottomleft: 3rem;
-  -webkit-border-bottom-left-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-  -moz-border-radius-bottomright: 3rem;
-  -webkit-border-bottom-right-radius: 3rem;
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
-  height: 35vh;
-  margin-top: -33rem;
+
+  //background-image: linear-gradient(
+  //    to right bottom,
+  //    rgba($color-red-light, 0.8),
+  //    rgba($color-red-medium, 0.8),
+  //    rgba($color-red-dark, 0.8)
+  //);
+  //background-position: top;
+  //background-size: cover;
+
+  //clip-path: polygon(0 0, 100% 100%, 0 100%);
+  //-webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
+  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
+
+  height: 30vh;
+  //margin-top: -20rem;
+  //margin-top: 30rem;
+  //padding-top: 10rem;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  & .row.mobile {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 100%;
+    transform: translateX(-90%);
+    display: none;
+  }
 
   &__text {
-    color: $color-orangered;
-    font-size: 6rem;
-    text-align: center;
+    //color: $color-orangered;
+    //font-size: 3rem;
+    //text-align: center;
+    //position: absolute;
+    //bottom: 0;
+    //width: 25%;
+
+    &-link,
+    &-link:visited {
+      //text-align: center;
+
+      font-size: 3rem;
+      color: $color-orangered;
+      text-decoration: none;
+      width: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-blue-light, 0.8),
+      rgba($color-blue-medium, 0.8),
+      rgba($color-blue-dark, 0.8)
+    );
+
+    .row.mobile {
+      display: block;
+      font-size: 3rem;
+    }
   }
 }

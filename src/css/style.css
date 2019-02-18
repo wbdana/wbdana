@@ -109,23 +109,32 @@ body {
     transform: rotateY(0deg); }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(255, 24, 44, 0.8), rgba(168, 16, 29, 0.8), rgba(83, 8, 15, 0.8));
-  background-position: top;
-  background-size: cover;
-  border-bottom-left-radius: 3rem;
-  -moz-border-radius-bottomleft: 3rem;
-  -webkit-border-bottom-left-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-  -moz-border-radius-bottomright: 3rem;
-  -webkit-border-bottom-right-radius: 3rem;
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
-  height: 35vh;
-  margin-top: -33rem; }
-  .footer__text {
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.8), rgba(54, 69, 79, 0.8), rgba(0, 0, 0, 0.8));
+  clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
+  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
+  height: 30vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .footer .row.mobile {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 100%;
+    transform: translateX(-90%);
+    display: none; }
+  .footer__text-link, .footer__text-link:visited {
+    font-size: 3rem;
     color: orangered;
-    font-size: 6rem;
-    text-align: center; }
+    text-decoration: none;
+    width: 25%; }
+
+@media screen and (max-width: 992px) {
+  .footer {
+    background-image: linear-gradient(to right bottom, rgba(55, 48, 255, 0.8), rgba(11, 9, 156, 0.8), rgba(5, 3, 65, 0.8)); }
+    .footer .row.mobile {
+      display: block;
+      font-size: 3rem; } }
 
 .row {
   max-width: 100%;
@@ -138,10 +147,9 @@ body {
     .row [class^="col-"].resp {
       float: none;
       position: relative;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%; } }
+      width: 100%; }
+      .row [class^="col-"].resp:not(:last-child) {
+        margin-bottom: 3rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -155,8 +163,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(11, 9, 156, 0.8), rgba(168, 16, 29, 0.8), rgba(255, 159, 44, 0.8), rgba(255, 235, 0, 0.8));
-  background-position: top;
+  background-image: linear-gradient(to right bottom, black, #0b099c, #a8101d, #ff9f2c, #ffeb00);
   background-size: cover;
   border-top-left-radius: 3rem;
   -moz-border-radius-topleft: 3rem;
@@ -190,10 +197,13 @@ body {
   .header-projects {
     font-size: 6rem; } }
 
+.home {
+  position: relative; }
+
 .navbar {
-  background-image: linear-gradient(to right bottom, black, #36454f);
   clip-path: polygon(0 25vh, 100% 0, 100% 25vh, 0 50vh);
   -webkit-clip-path: polygon(0 25vh, 100% 0, 100% 25vh, 0 50vh);
+  margin-top: -6rem;
   height: 50%;
   position: absolute;
   bottom: 0;
@@ -237,22 +247,22 @@ body {
 
 @media screen and (max-width: 992px) {
   .navbar {
+    display: none;
     height: 50%;
     position: absolute;
-    width: 100%;
-    overflow: auto; }
+    width: 100%; }
     .navbar__item {
-      height: 25%;
-      left: 50%;
-      margin-top: 10rem;
+      padding-top: 10rem;
+      padding-left: 15rem;
       outline-offset: 1rem;
-      transform: translateX(-75%);
-      width: 75%; }
+      transform: translateX(-50%);
+      width: 100%;
+      position: absolute;
+      width: 100%; }
       .navbar__item-text {
         color: orangered;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 700;
-        margin-left: 5%;
         height: 50%;
         text-decoration: none;
         position: absolute;
@@ -260,10 +270,7 @@ body {
         text-transform: uppercase;
         transform: skew(-15deg, -8deg);
         transition: all .2s ease;
-        width: 50%; }
-        .navbar__item-text:hover {
-          background-color: orange;
-          outline: 1.5rem solid #050341; }
+        width: 100%; }
       .navbar__item-1 > * {
         margin-top: 20rem; }
       .navbar__item-2 > * {
@@ -276,7 +283,7 @@ body {
 .section-projects {
   background-color: #eeeeee;
   overflow: hidden;
-  padding: 20rem 0 15rem 0;
+  padding: 20rem 0 30rem 0;
   margin-top: -28rem;
   height: 100%;
   z-index: -1; }
