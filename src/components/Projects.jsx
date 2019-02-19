@@ -54,9 +54,8 @@ const Projects = () => {
         <div className="cf ph2-ns">
         {
           projects.map((project, index) => (
-            <div className="fl w-100 w-25-ns pa2">
+            <div className="fl w-100 w-25-ns pa2" key={index}>
               <ProjectCard
-                key={index}
                 code={project.code}
                 codeTwo={project.codeTwo}
                 demoText={project.demoText}
