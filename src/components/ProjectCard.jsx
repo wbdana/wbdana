@@ -38,8 +38,6 @@ const ProjectCard = props => {
       </div>
     );
 
-  console.log(!!props.codeTwo);
-
   const demoText = props.demoText || "Demo";
 
   return (
