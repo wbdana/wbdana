@@ -52,5 +52,13 @@
 @media screen and (max-width: 992px) {
   .navbar {
     margin-top: 1rem;
+    margin-left: 0;
+
+    &__item {
+
+      &-text {
+        position: relative; // TODO WBD this is a workaround until position: absolute; can work
+      }
+    }
   }
 }

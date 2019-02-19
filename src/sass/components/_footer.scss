@@ -38,11 +38,11 @@
 
 @media screen and (max-width: 992px) {
   .footer {
-    height: 130vh;
+    height: 100vh;
 
-    & > * {
+    * {
       padding-left: 0;
-      //margin-left: 0;
+      margin-left: 0;
     }
   }
 }
