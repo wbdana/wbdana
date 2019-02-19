@@ -32,26 +32,8 @@ const Header = () => {
               />
             </a>
           </div>
-
-
         </div>
       </div>
-
-
-
-      {/*<div className="mw9 center ph3-ns">*/}
-        {/*<div className="cf ph2-ns">*/}
-          {/*<div className="fl w-100 w-50-ns pa2">*/}
-
-            {/*<Navbar />*/}
-
-          {/*</div>*/}
-        {/*</div>*/}
-      {/*</div>*/}
-
-          {/*</div>*/}
-        {/*</div>*/}
-      {/*</div<*/}
     </header>
   );
 };
