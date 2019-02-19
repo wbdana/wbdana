@@ -102,6 +102,23 @@
     margin-top: 22rem;
     color: $color-black;
     width: 100%;
+    font-weight: 400;
+  }
+
+  &__description {
+    position: relative;
+    color: $color-black;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 26rem;
+    text-align: center;
+    font-weight: 300;
+
+    *,
+    *:visited {
+      text-decoration: none;
+    }
+    white-space: pre;
   }
 
   &:hover &__side--front {

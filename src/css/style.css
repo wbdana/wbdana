@@ -109,7 +109,20 @@ body {
     position: absolute;
     margin-top: 22rem;
     color: #000000;
-    width: 100%; }
+    width: 100%;
+    font-weight: 400; }
+  .card__description {
+    position: relative;
+    color: #000000;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 26rem;
+    text-align: center;
+    font-weight: 300;
+    white-space: pre; }
+    .card__description *,
+    .card__description *:visited {
+      text-decoration: none; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {

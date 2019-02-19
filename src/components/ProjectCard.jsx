@@ -39,6 +39,11 @@ const ProjectCard = props => {
     );
 
   const demoText = props.demoText || "Demo";
+  const description = () => (
+    props.description ?
+      props.description() :
+      null
+  );
 
   return (
       <div className="card">
@@ -48,6 +53,12 @@ const ProjectCard = props => {
           </div>
           <div className="card__title">
             {props.title}
+          </div>
+          <div className="card__description">
+            <span>Technologies used:</span>
+            <ul>
+              {description()}
+            </ul>
           </div>
         </div>
         <div className={"card__side card__side--back card__side--back-" + props.position}>

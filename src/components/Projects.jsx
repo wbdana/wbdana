@@ -9,6 +9,15 @@ const Projects = () => {
       url: "https://pypi.org/project/opengraphio/",
       code: "https://github.com/wbdana/opengraph-io-python",
       demoText: "Package",
+      description: () => (
+        <div>
+          <li>Python 2.7</li>
+          <li>Python 3.7</li>
+          <li>Travis CI</li>
+          <li>Coveralls</li>
+          <li>OpenGraph.io</li>
+        </div>
+      ),
     },
     {
       img: "https://i.imgur.com/atLXEqN.png",
@@ -16,12 +25,28 @@ const Projects = () => {
       url: "https://rubygems.org/gems/opengraph-io",
       code: "https://github.com/wbdana/opengraph-io-ruby",
       demoText: "Gem",
+      description: () => (
+        <div>
+          <li>Ruby 2.4</li>
+          <li>RSpec</li>
+          <li>Travis CI</li>
+          <li>Coveralls</li>
+          <li>OpenGraph.io</li>
+        </div>
+      ),
     },
     {
       img: "https://i.imgur.com/SzsSGDt.jpg",
       title: "Asteroids Online",
       url: "https://asteroids-online.herokuapp.com",
       code: "https://github.com/wbdana/astro",
+      description: () => (
+          <div>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Redux Thunk</li>
+          </div>
+      ),
     },
     {
       img: "https://i.imgur.com/7jG8L5r.png",
@@ -29,6 +54,16 @@ const Projects = () => {
       url: "https://conntext.herokuapp.com",
       code: "https://github.com/wbdana/conntext",
       codeTwo: "https://github.com/wbdana/conntext-api",
+      description: () => (
+        <div>
+          <li>Ruby on Rails</li>
+          <li>Rails Action Cable</li>
+          <li>React</li>
+          <li>React Router</li>
+          <li>Postgres</li>
+          <li>GitHub API</li>
+        </div>
+      ),
     },
     {
       img: "http://i.imgur.com/MubF8Tb.png",
@@ -36,12 +71,30 @@ const Projects = () => {
       url: "https://qsmart-react.herokuapp.com",
       code: "https://github.com/davidtom/qsmart-react",
       codeTwo: "https://github.com/davidtom/qsmart-api",
+      description: () => (
+        <div>
+          <li>Ruby on Rails</li>
+          <li>Rails Action Cable</li>
+          <li>Redis</li>
+          <li>Postgres</li>
+          <li>React</li>
+          <li>Twilio API</li>
+        </div>
+      ),
     },
     {
       img: "http://i.imgur.com/UUo9URs.png",
       title: "Pixel Playground",
       url: "https://pixel-playground.herokuapp.com/",
       code: "https://github.com/cwooley/pixel-playground",
+      description: () => (
+        <div>
+          <li>JavaScript</li>
+          <li>Ruby on Rails</li>
+          <li>Rails Action Cable</li>
+          <li>HTML5 Canvas</li>
+        </div>
+      ),
     },
   ];
 
@@ -59,6 +112,7 @@ const Projects = () => {
                 code={project.code}
                 codeTwo={project.codeTwo}
                 demoText={project.demoText}
+                description={project.description}
                 img={project.img}
                 position={(index + 1) % 4}
                 title={project.title}
