@@ -6,15 +6,19 @@
     to right bottom,
 
     rgba($color-black, 1),
-    rgba($color-charcoal, 1),
-    rgba($color-grey-light, 1)
+    //rgba($color-blue-medium, 1),
+    //rgba($color-red-medium, 1),
+    //rgba($color-orange-light, 1),
+    //rgba($color-yellow-medium, 1),
+    rgba($color-charcoal, 1)
+    //rgba($color-grey-light, 1)
 
     //rgba($color-black, 1),
     //rgba($color-blue-medium, 1),
     //rgba($color-red-medium, 1),
     //rgba($color-orange-light, 1),
     //rgba($color-yellow-medium, 1)
-    //url('https://i.imgur.com/K8Q2Jwi.png')
+    //url("https://i.imgur.com/K8Q2Jwi.png")
   );
   //background: url("https://i.imgur.com/K8Q2Jwi.png") top;
   background-size: cover;
@@ -37,6 +41,7 @@
 
   &__animated {
     animation: moveInRight 5s ease-out;
+    font-size: 9rem;
   }
 
   &__text {
@@ -58,7 +63,27 @@
   }
 }
 
+.image {
+  position: absolute;
+  outline-offset: 1rem;
+  transition: all .2s ease;
+
+  &:hover {
+    outline: 1rem solid $color-orangered;
+    transform: scale(1.05);
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .header {
+    &__animated {
+      font-size: 5rem;
+    }
+  }
+  .image {
+    display: none;
+  }
+
   .header-projects {
     font-size: 6rem;
   }

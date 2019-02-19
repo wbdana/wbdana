@@ -19,6 +19,10 @@ const Header = () => {
             </div>
           </div>
 
+          <div className="fl w-100 w-50-ns pa2">
+            <img src="https://avatars1.githubusercontent.com/u/26241113?s=460&v=4" alt="William Dana and Indy" className="image header__animated" />
+          </div>
+
 
         </div>
       </div>
@@ -28,7 +32,9 @@ const Header = () => {
       {/*<div className="mw9 center ph3-ns">*/}
         {/*<div className="cf ph2-ns">*/}
           {/*<div className="fl w-100 w-50-ns pa2">*/}
-            <Navbar />
+
+            {/*<Navbar />*/}
+
           {/*</div>*/}
         {/*</div>*/}
       {/*</div>*/}
