@@ -8,6 +8,7 @@
 
 @import "components/button";
 @import "components/card";
+@import "components/projects";
 @import "components/footer";
 
 @import "layout/grid";
@@ -15,4 +16,6 @@
 @import "layout/home";
 @import "layout/navbar";
 
-@import "pages/home";
+//@import "pages/home";
+
+@import "node_modules/tachyons-sass/tachyons.scss";
