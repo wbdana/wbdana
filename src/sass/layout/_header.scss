@@ -60,6 +60,8 @@
 
   &:hover {
     color: $color-red-dark;
+    transform: translateY(-3px) scale(1.05, 1.05);
+    text-shadow: 0 1rem 2rem rgba($color-black, .2);
   }
 }
 
