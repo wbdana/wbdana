@@ -1,10 +1,16 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import OpenPyImg from '../assets/sq_open_py.png';
+import OpenRbImg from '../assets/sq_open_rb.png';
+import AstroImg from '../assets/sq_astro.png';
+import ConntextImg from '../assets/sq_conntext.png';
+import QSmartImg from '../assets/sq_qsmart.png';
+import PixelImg from '../assets/sq_pixel.png';
 
 const Projects = () => {
   const projects = [
     {
-      img: "https://i.imgur.com/VsmiDLI.png",
+      img: OpenPyImg,
       title: "OpenGraph.io Python",
       url: "https://pypi.org/project/opengraphio/",
       code: "https://github.com/wbdana/opengraph-io-python",
@@ -20,7 +26,7 @@ const Projects = () => {
       ),
     },
     {
-      img: "https://i.imgur.com/atLXEqN.png",
+      img: OpenRbImg,
       title: "OpenGraph.io Ruby",
       url: "https://rubygems.org/gems/opengraph-io",
       code: "https://github.com/wbdana/opengraph-io-ruby",
@@ -36,20 +42,20 @@ const Projects = () => {
       ),
     },
     {
-      img: "https://i.imgur.com/SzsSGDt.jpg",
+      img: AstroImg,
       title: "Asteroids Online",
       url: "https://asteroids-online.herokuapp.com",
       code: "https://github.com/wbdana/astro",
       description: () => (
-          <div>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Redux Thunk</li>
-          </div>
+        <div>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Redux Thunk</li>
+        </div>
       ),
     },
     {
-      img: "https://i.imgur.com/7jG8L5r.png",
+      img: ConntextImg,
       title: "Connected Text",
       url: "https://conntext.herokuapp.com",
       code: "https://github.com/wbdana/conntext",
@@ -66,7 +72,7 @@ const Projects = () => {
       ),
     },
     {
-      img: "http://i.imgur.com/MubF8Tb.png",
+      img: QSmartImg,
       title: "QSmart",
       url: "https://qsmart-react.herokuapp.com",
       code: "https://github.com/davidtom/qsmart-react",
@@ -83,7 +89,7 @@ const Projects = () => {
       ),
     },
     {
-      img: "http://i.imgur.com/UUo9URs.png",
+      img: PixelImg,
       title: "Pixel Playground",
       url: "https://pixel-playground.herokuapp.com/",
       code: "https://github.com/cwooley/pixel-playground",
