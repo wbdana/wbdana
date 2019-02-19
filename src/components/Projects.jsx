@@ -4,28 +4,44 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
   const projects = [
     {
+      img: "https://i.imgur.com/VsmiDLI.png",
+      title: "OpenGraph.io Python",
+      url: "https://pypi.org/project/opengraphio/",
+      code: "https://github.com/wbdana/opengraph-io-python",
+      demoText: "Package",
+    },
+    {
+      img: "https://i.imgur.com/atLXEqN.png",
+      title: "OpenGraph.io Ruby",
+      url: "https://rubygems.org/gems/opengraph-io",
+      code: "https://github.com/wbdana/opengraph-io-ruby",
+      demoText: "Gem",
+    },
+    {
       img: "https://i.imgur.com/SzsSGDt.jpg",
-      position: 1,
       title: "Asteroids Online",
       url: "https://asteroids-online.herokuapp.com",
+      code: "https://github.com/wbdana/astro",
     },
     {
       img: "https://i.imgur.com/7jG8L5r.png",
-      position: 2,
       title: "Connected Text",
       url: "https://conntext.herokuapp.com",
+      code: "https://github.com/wbdana/conntext",
+      codeTwo: "https://github.com/wbdana/conntext-api",
     },
     {
       img: "http://i.imgur.com/MubF8Tb.png",
-      position: 3,
       title: "QSmart",
       url: "https://qsmart-react.herokuapp.com",
+      code: "https://github.com/davidtom/qsmart-react",
+      codeTwo: "https://github.com/davidtom/qsmart-api",
     },
     {
       img: "http://i.imgur.com/UUo9URs.png",
-      position: 4,
       title: "Pixel Playground",
       url: "https://pixel-playground.herokuapp.com/",
+      code: "https://github.com/cwooley/pixel-playground",
     },
   ];
 
@@ -41,8 +57,11 @@ const Projects = () => {
             <div className="fl w-100 w-25-ns pa2">
               <ProjectCard
                 key={index}
+                code={project.code}
+                codeTwo={project.codeTwo}
+                demoText={project.demoText}
                 img={project.img}
-                position={project.position}
+                position={(index + 1) % 4}
                 title={project.title}
                 url={project.url}
               />
