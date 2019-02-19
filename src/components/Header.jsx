@@ -20,7 +20,17 @@ const Header = () => {
           </div>
 
           <div className="fl w-100 w-50-ns pa2">
-            <img src="https://avatars1.githubusercontent.com/u/26241113?s=460&v=4" alt="William Dana and Indy" className="image header__animated" />
+            <a
+              href="https://github.com/wbdana"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://avatars1.githubusercontent.com/u/26241113?s=460&v=4"
+                alt="Will and Indy"
+                className="image header__animated"
+              />
+            </a>
           </div>
 
 

@@ -8,9 +8,10 @@
   display: inline-block;
   font-size: 3rem;
   padding: 1.5rem 4rem;
-  position: absolute;
+  position: relative;
   left: 50%;
-  transform: translate(-50%, 0%);
+  height: 8rem;
+  transform: translate(-50%, -50%);
   text-decoration: none;
   text-transform: uppercase;
   transition: all .2s ease;
@@ -21,7 +22,7 @@
 
   &:hover {
     background-color: $color-charcoal;
+    box-shadow: 0 1rem 3rem rgba($color-black, .2);
     color: $color-white;
-    transform: translate(-50%, -3px);
   }
 }
