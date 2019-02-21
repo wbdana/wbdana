@@ -2,24 +2,27 @@
   clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   height: 50vh;
-  background-image: linear-gradient(
-    to right bottom,
+  //background-image: linear-gradient(
+  //  to right bottom,
+  //
+  //  rgba($color-black, 1),
+  //  //rgba($color-blue-medium, 1),
+  //  //rgba($color-red-medium, 1),
+  //  //rgba($color-orange-light, 1),
+  //  //rgba($color-yellow-medium, 1),
+  //  rgba($color-charcoal, 1)
+  //  //rgba($color-grey-light, 1)
+  //
+  //  //rgba($color-black, 1),
+  //  //rgba($color-blue-medium, 1),
+  //  //rgba($color-red-medium, 1),
+  //  //rgba($color-orange-light, 1),
+  //  //rgba($color-yellow-medium, 1)
+  //  //url("https://i.imgur.com/K8Q2Jwi.png")
+  //
+  //);
 
-    rgba($color-black, 1),
-    //rgba($color-blue-medium, 1),
-    //rgba($color-red-medium, 1),
-    //rgba($color-orange-light, 1),
-    //rgba($color-yellow-medium, 1),
-    rgba($color-charcoal, 1)
-    //rgba($color-grey-light, 1)
-
-    //rgba($color-black, 1),
-    //rgba($color-blue-medium, 1),
-    //rgba($color-red-medium, 1),
-    //rgba($color-orange-light, 1),
-    //rgba($color-yellow-medium, 1)
-    //url("https://i.imgur.com/K8Q2Jwi.png")
-  );
+  background-image: url("https://github.com/wbdana/wbdana/blob/master/src/assets/aur-update.gif?raw=true");
   //background: url("https://i.imgur.com/K8Q2Jwi.png") top;
   background-size: cover;
 
@@ -41,7 +44,9 @@
 
   &__animated {
     animation: moveInRight 5s ease-out;
+    color: $color-grey-light;
     font-size: 9rem;
+    text-shadow: 7px 7px $color-black;
   }
 
   &__text {

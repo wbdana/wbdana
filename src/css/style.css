@@ -137,7 +137,7 @@ body {
   margin-right: 0; }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.8), rgba(54, 69, 79, 0.8), rgba(0, 0, 0, 0.8));
+  background-color: #282a33;
   clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
   -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
   clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
@@ -150,7 +150,7 @@ body {
   -webkit-border-bottom-left-radius: 3rem;
   font-size: 3rem;
   text-align: center;
-  height: 30vh;
+  height: 35vh;
   position: absolute;
   width: 100%; }
   .footer__text {
@@ -190,7 +190,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   height: 50vh;
-  background-image: linear-gradient(to right bottom, black, #36454f);
+  background-image: url("https://github.com/wbdana/wbdana/blob/master/src/assets/aur-update.gif?raw=true");
   background-size: cover;
   border-top-left-radius: 3rem;
   -moz-border-radius-topleft: 3rem;
@@ -206,7 +206,9 @@ body {
     width: 100%; }
   .header__animated {
     animation: moveInRight 5s ease-out;
-    font-size: 9rem; }
+    color: #eeeeee;
+    font-size: 9rem;
+    text-shadow: 7px 7px #000000; }
   .header__text {
     font-size: 7rem;
     transform: translate(-50%, -50%);
