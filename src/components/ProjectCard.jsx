@@ -61,7 +61,7 @@ const ProjectCard = props => {
             </ul>
           </div>
         </div>
-        <div className={"card__side card__side--back card__sidqe--back-" + props.position}>
+        <div className={"card__side card__side--back card__side--back-" + props.position}>
           <span className="card__side--back-text">See the</span>
           <a
             href={props.url}

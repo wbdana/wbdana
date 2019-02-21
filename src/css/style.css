@@ -251,7 +251,7 @@ body {
   .navbar__item {
     outline-offset: .5rem; }
     .navbar__item-text {
-      color: orangered;
+      color: #1e7e79;
       font-size: 4.5rem;
       font-weight: 700;
       text-decoration: none;
@@ -262,7 +262,8 @@ body {
       transform: skew(-15deg, -8deg);
       transition: all .2s ease; }
       .navbar__item-text:hover {
-        background-color: orange;
+        background-color: #ff6500;
+        color: #36454f;
         outline: 1rem solid #1e7e79; }
 
 @media screen and (max-width: 992px) {
