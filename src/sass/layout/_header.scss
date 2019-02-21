@@ -22,7 +22,7 @@
   //
   //);
 
-  background-image: url("https://github.com/wbdana/wbdana/blob/master/src/assets/aur-update.gif?raw=true");
+  background-image: url("https://github.com/wbdana/wbdana/blob/master/src/assets/aur-update-2.gif?raw=true");
   //background: url("https://i.imgur.com/K8Q2Jwi.png") top;
   background-size: cover;
 
@@ -46,7 +46,6 @@
     animation: moveInRight 5s ease-out;
     color: $color-grey-light;
     font-size: 9rem;
-    text-shadow: 7px 7px $color-black;
   }
 
   &__text {
@@ -76,7 +75,7 @@
   transition: all .2s ease;
 
   &:hover {
-    outline: 1rem solid $color-orangered;
+    outline: 1rem solid $color-blue-electric;
     transform: translateY(-3px) scale(1.05);
   }
 }

@@ -2,8 +2,6 @@
   0% {
     opacity: 0;
     transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -137,7 +135,7 @@ body {
   margin-right: 0; }
 
 .footer {
-  background-color: #282a33;
+  background-color: #000000;
   clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
   -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 30vh, 0 30vh);
   clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
@@ -190,7 +188,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   height: 50vh;
-  background-image: url("https://github.com/wbdana/wbdana/blob/master/src/assets/aur-update.gif?raw=true");
+  background-image: url("https://github.com/wbdana/wbdana/blob/master/src/assets/aur-update-2.gif?raw=true");
   background-size: cover;
   border-top-left-radius: 3rem;
   -moz-border-radius-topleft: 3rem;
@@ -207,8 +205,7 @@ body {
   .header__animated {
     animation: moveInRight 5s ease-out;
     color: #eeeeee;
-    font-size: 9rem;
-    text-shadow: 7px 7px #000000; }
+    font-size: 9rem; }
   .header__text {
     font-size: 7rem;
     transform: translate(-50%, -50%);
@@ -230,7 +227,7 @@ body {
   outline-offset: 1rem;
   transition: all .2s ease; }
   .image:hover {
-    outline: 1rem solid orangered;
+    outline: 1rem solid #002a24;
     transform: translateY(-3px) scale(1.05); }
 
 @media screen and (max-width: 992px) {
@@ -266,7 +263,7 @@ body {
       transition: all .2s ease; }
       .navbar__item-text:hover {
         background-color: orange;
-        outline: 1rem solid #050341; }
+        outline: 1rem solid #1e7e79; }
 
 @media screen and (max-width: 992px) {
   .navbar {
